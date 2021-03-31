@@ -3,8 +3,8 @@
 ### To Do
 - [x] Review primitive types
 - [x] Objects!
-- [ ] Passing primitives and objects to functions
-- [ ] Functions inside objects (using `this`)
+- [x] Passing primitives and objects to functions
+- [x] Functions inside objects (using `this`)
 
 ### Primitives
 * booleans
@@ -33,6 +33,8 @@ const myInt = 7; // 7.0 Number.isInteger()
 * If you explicitly know the name of the key, use dot syntax
 * If the name of the key is dynamic, use square brackets
 
+### Passing values to functions
+* When you pass a primitive, the function gets a copy of the value not the actual value
 
 
 
