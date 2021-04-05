@@ -4,7 +4,7 @@ const funcs = require('./say-hello');
 
 const sayHello = funcs.sayHello;
 
-console.log(hello);
+// console.log(hello);
 
 // console.log(assert);
 

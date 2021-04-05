@@ -1,0 +1,21 @@
+{
+  "name": "w02d01",
+  "version": "1.0.0",
+  "description": "Lecture notes and example code for week 2 day 1 lecture",
+  "main": "say-hello-test.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha"
+  },
+  "keywords": [
+    "testing",
+    "tdd",
+    "mocha",
+    "chai",
+    "node"
+  ],
+  "author": "Andy Lindsay",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^8.3.2"
+  }
+}
