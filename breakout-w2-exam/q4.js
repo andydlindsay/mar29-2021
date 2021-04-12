@@ -27,8 +27,8 @@ Examples:
 */
 
 const minmax = function(list) {
-  // let minValue = Infinity;
-  // let maxValue = -Infinity;
+  // let minValue = list[0];
+  // let maxValue = list[0];
 
   // for (const element of list) {
   //   if (element > maxValue) {
