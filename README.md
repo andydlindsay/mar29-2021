@@ -7,3 +7,4 @@
 * [W01D04 - Callbacks!](/w01d04)
 * [W02D01 - TDD, CommonJS, and NPM](/w02d01)
 * [BREAKOUT - Mock Exam Review](/breakout-mock-exam-review)
+* [W03D01 - Web Servers 101](/w03d01)
