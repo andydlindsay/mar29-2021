@@ -9,6 +9,7 @@ The number will be the temperature in degrees, and the boolean will be whether t
 Your answer should be rounded to one decimal place, and returned as a Number, not a string.
 
 If the first argument is not a number, return NaN for the result.
+isNaN????
 
 Examples:
 
@@ -20,7 +21,20 @@ Examples:
 */
 
 const tempConverter = function(value, cToF) {
+  // (0°C × 9/5) + 32 = 32°F if cToF === true
+  // (32°F − 32) × 5/9 = 0°C if cToF === false
+  if (typeof value !== 'number') {
+    return NaN;
+  }
 
+  const f = (value * 9/5) + 32;
+  const c = (value - 32) * 5/9;
+
+  if (cToF) {
+    return f;
+  }
+
+  return c;
 };
 
 // Don't change below:

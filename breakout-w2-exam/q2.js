@@ -18,7 +18,26 @@ Examples:
 */
 
 const countWhich = function(list, cb) {
+  // check if first argument is not an array
+  if (!Array.isArray(list)) {
+    return false;
+  }
 
+  // set up a variable to hold the count
+  let count = 0;
+
+  // loop through the list
+  for (const element of list) {
+    // call the cb with each element of the list
+    const result = cb(element);
+    // if the cb returns truthy, increment count
+    if (result) {
+      count++;
+    }
+  }
+
+  // return count
+  return count;
 };
 
 // Don't change below:

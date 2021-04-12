@@ -27,7 +27,31 @@ Examples:
 */
 
 const minmax = function(list) {
+  // let minValue = Infinity;
+  // let maxValue = -Infinity;
 
+  // for (const element of list) {
+  //   if (element > maxValue) {
+  //     maxValue = element;
+  //   }
+
+  //   if (element < minValue) {
+  //     minValue = element;
+  //   }
+  // }
+
+  // const result = [];
+  // result.push(minValue);
+  // result.push(maxValue);
+  // return [minValue, maxValue];
+
+  // sort the array
+  // return array containing the [0] and the [arr.length - 1] values
+  list.sort((a, b) => a - b);
+
+  const min = list[0];
+  const max = list[list.length - 1];
+  return [min, max];
 };
 
 // Don't change below:
