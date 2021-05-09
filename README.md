@@ -11,3 +11,5 @@
 * [BREAKOUT - Week 2 Exam Review](/breakout-w2-exam)
 * [W05D05 - Mid-term Project Kickoff](/w05d05)
 * [BREAKOUT - Express Router](/breakout-express-router)
+* [W07D02 - Immutable Update Patterns](/w07d02)
+* [W07D03 - Data Fetching & Other Side Effects](/w07d03)
