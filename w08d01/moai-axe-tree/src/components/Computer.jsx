@@ -1,13 +1,25 @@
 import React from 'react';
 
 const Computer = (props) => {
-  const {state} = props;
+  const {state, setState} = props;
+
+  const clickHandler = () => {
+    setState((prevState) => {
+      return {
+        ...prevState,
+        cheating: !prevState.cheating
+      };
+    });
+  };
   
   return (
     <section className="computer">
       <span
         role="img" 
-        aria-label="robot" 
+        aria-label="robot"
+        data-testid="mecha-icon"
+        onClick={clickHandler}
+        className={state.cheating ? 'cheating' : null}
       >
         🤖
       </span>
