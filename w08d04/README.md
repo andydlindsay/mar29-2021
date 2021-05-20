@@ -5,7 +5,8 @@
 - [x] Intro to Class-based Components
 - [x] Passing Props
 - [x] Handling Events and Changes to State
-- [ ] Lifecycle Methods
+- [x] History
+- [x] Lifecycle Methods
 
 tldr; if you come across CB components during finals, DO NOT convert them to functional
 

@@ -9,7 +9,8 @@ const ClassBased = class extends Component {
       internalValue: props.value * 2,
       newKeyValuePair: false,
       days: [],
-      interviewers: {}
+      interviewers: {},
+      interval: null
     };
 
     this.increment = this.increment.bind(this);
@@ -23,6 +24,29 @@ const ClassBased = class extends Component {
       counter: this.state.counter + 1,
       newKeyValuePair: !this.state.newKeyValuePair
     });
+  }
+
+  // data fetching, setting up timers, setting up socket connections
+  componentDidMount() {
+    console.log('the component has mounted to the dom');
+
+    const interval = setInterval(() => {
+      console.log('interval has fired');
+    }, 3000);
+
+    this.setState({ interval });
+  }
+
+  // listen for changes to the data
+  componentDidUpdate(prevState, prevProps) {
+    console.log('component has updated');
+  }
+
+  // fires once, used for clean up
+  componentWillUnmount() {
+    console.log('component will be unmounted from the dom');
+
+    clearInterval(this.state.interval);
   }
 
   render() {
