@@ -10,51 +10,69 @@
 * [x] Blocks and Lambdas
 * [x] Classes
 
-### The Why
-* on the job training
-* Rails starts on Tuesday
-* Not to learn Ruby/Rails
-* self-directed
-* Jungle - online retail store
+### Classes
+* You declare a class in Ruby with the class keyword.
 
-### The Ruby
-* JS vs Ruby
-* you are going to write Ruby with an accent
-* Ruby was written in 1995, took off in 2005-2015
-* to be fun to read/write
-* Ruby is purely synchronous
-* purely back end language
-
-
-### Rails
-* collection of libraries that make it super easy to create full-stack apps (server-side rendered)
-
-
-
-
-```js
-const $header = $('header');
+```Ruby
+class Car
+end
 ```
 
-RVM = Ruby Version Manager
+#### Initialize
+* `initialize` is a special method in classes that is called when a class object is created with .new
+* `initialize` methods are used to set the initial state of an object.
 
+```Ruby
+class Car
+ def initialize (color, year, model)
+   @color = color
+   @year = year
+   @model = model
+ end
+end
 
-Rails API - React FE
-rails g controller my-controller
-rails g model 
-rails g migration
-rails g seed
-ActiveRecord
+my_car = Car.new("red", 2007, "matrix")
+```
 
-SELECT * FROM users;
-User.all
+#### Accesor && Readers
+* You can set default read and write methods for instance variables with accessor and readers.
 
-SELECT *
-FROM albums
-JOIN songs
-ON albu....
+```Ruby
+class Car
+ attr_accessor :color
+ attr_reader :year
+ attr_writer :model
+ def initialize (color, year, model)
+   @color = color
+   @year = year
+   @model = model
+ end
+end
+```
 
-album.songs
-user.posts
-user.messages
-cart.items
+* The above is equivalent to:
+
+```Ruby
+class Car
+ def initialize (color, year, model)
+   @color = color
+   @year = year
+   @model = model
+ end
+
+ def color
+   @color
+ end
+ def color=(value)
+   @color = value
+ end
+
+ def year
+   @year
+ end
+ 
+ def model=(value)
+   @model = value
+ end
+end
+```
