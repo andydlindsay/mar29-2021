@@ -1,14 +1,14 @@
 # W08D05 - Intro to Ruby
 
 ### To Do
-* [ ] Ruby Intro
-* [ ] Variables
-* [ ] Conditionals
-* [ ] Loops
-* [ ] Methods
-* [ ] Hashes
-* [ ] Blocks and Lambdas
-* [ ] Classes
+* [x] Ruby Intro
+* [x] Variables
+* [x] Conditionals
+* [x] Loops
+* [x] Methods
+* [x] Hashes
+* [x] Blocks and Lambdas
+* [x] Classes
 
 ### The Why
 * on the job training
@@ -32,6 +32,29 @@
 
 
 
+```js
+const $header = $('header');
+```
+
+RVM = Ruby Version Manager
 
 
+Rails API - React FE
+rails g controller my-controller
+rails g model 
+rails g migration
+rails g seed
+ActiveRecord
 
+SELECT * FROM users;
+User.all
+
+SELECT *
+FROM albums
+JOIN songs
+ON albu....
+
+album.songs
+user.posts
+user.messages
+cart.items
