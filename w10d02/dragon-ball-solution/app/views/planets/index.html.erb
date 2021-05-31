@@ -1,0 +1,8 @@
+<h1>All the planets!!</h1>
+
+<% @planets.each do |planet| %>
+  <div class="planet">
+    <h2><%= planet.name %></h2>
+    <h2>See the <%= link_to 'characters', planet_characters_path(planet) %></h2>
+  </div>
+<% end %>

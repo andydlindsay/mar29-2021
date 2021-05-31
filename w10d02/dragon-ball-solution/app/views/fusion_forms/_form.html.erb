@@ -1,0 +1,17 @@
+<%= form_with(model: fusion_form) do |form| %>
+  <% if fusion_form.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(fusion_form.errors.count, "error") %> prohibited this fusion_form from being saved:</h2>
+
+      <ul>
+        <% fusion_form.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

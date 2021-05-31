@@ -1,0 +1,2 @@
+class FusionForm < ApplicationRecord
+end

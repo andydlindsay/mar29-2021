@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Fusion Forms</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @fusion_forms.each do |fusion_form| %>
+      <tr>
+        <td><%= link_to 'Show', fusion_form %></td>
+        <td><%= link_to 'Edit', edit_fusion_form_path(fusion_form) %></td>
+        <td><%= link_to 'Destroy', fusion_form, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Fusion Form', new_fusion_form_path %>
