@@ -14,7 +14,7 @@ puts "creating planets"
   )
 end
 
-puts "retreiving planets"
+puts "retrieving planets"
 
 planets = Planet.all.to_a
 
