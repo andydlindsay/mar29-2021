@@ -1,13 +1,22 @@
 # W10D01 - Rails Review
 
 ### To Do
-- [ ] "Rails Week" Conversation
-- [ ] MVC Review
+- [x] "Rails Week" Conversation
+- [x] MVC Review
 - [ ] Rails Libraries
 - [ ] Quickly build simple Rails app
 - [ ] Nested Resources
 
-
+### Rails Week
+* quite challenging
+* totally different language/syntax
+* enjoyed it
+* pretty chill
+* learned alongside JS (contrast/compare)
+* friendlier than JS (simpler to understand)
+* left to your own devices
+* structured framework
+* free resources
 
 
 
