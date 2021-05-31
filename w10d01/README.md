@@ -4,7 +4,7 @@
 - [x] "Rails Week" Conversation
 - [x] MVC Review
 - [ ] Rails Libraries
-- [ ] Quickly build simple Rails app
+- [x] Quickly build simple Rails app
 - [ ] Nested Resources
 
 ### Rails Week
@@ -18,7 +18,8 @@
 * structured framework
 * free resources
 
-
+PHP
+PHP Hypertext Preprocessor
 
 
 
